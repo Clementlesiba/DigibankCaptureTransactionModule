@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+      <h:head>
+      <title>Digibank Capture Transaction Module</title>
+      </h:head>
+      <h:body>
+      <h2>Capture Transaction Module </h2>
+  	  <h:form>
+  	  <h:panelGrid columns="2"> 
+  	  <h:outputLabel value="Name :"/>
+  	  <h:inputText value="#{CaptureTransactionModuleController.CaptureTransactionModule.name}"></h:inputText>
+  	  <h:outputLabel value="Source Passport :"/>
+  	  <h:inputText value="#{CaptureTransactionModuleController.CaptureTransactionModule.sourcePassport}"></h:inputText>
+  	  <h:outputLabel value="destination Passport :"/>
+  	  <h:inputText value="#{CaptureTransactionModuleController.CaptureTransactionModule.destinationPassport}"></h:inputText>
+  	  <h:outputText value="Destination Bank :" />
+  	  <h:inputText value="#{CaptureTransactionModuleController.CaptureTransactionModule.destinationBank}"></h:inputText>
+  	  <h:outputText value="Destation Country :"/>
+  	  <h:inputText value="#{CaptureTransactionModuleController.CaptureTransactionModule.destationCountry}"></h:inputText>
+  	  <h:outputText value="Account Number :"/>
+  	  <h:inputText value="#{CaptureTransactionModuleController.CaptureTransactionModule.accountNumber}"></h:inputText>
+  	  <h:outputText value="Amount :"/>
+  	  <h:inputText value="#{CaptureTransactionModuleController.CaptureTransactionModule.amount}"></h:inputText>
+
+  	 
+  	  </h:panelGrid>
+  	  
+  	   <h:commandButton value="submit" action="CaptureTransactionModuleController.addNewCaptureTransactionModule"></h:commandButton>
+  	  </h:form>
+      </h:body>
+      
+   	
+   
+</html>
